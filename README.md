@@ -9,9 +9,7 @@
 ## What is Raft consensus algorithm?
 In a distributed system, data replication is needed for either fault-tolerance or latency optimization. Maintaining a consensus among all replications is crucial for the correctness and robustness of the distributed system. Various algorithms emerge to address this problem. Raft is an alternative designed to Paxos, aiming to be more understandable and to offer the same level of safety and robustness.
 
-![alt text](https://media.geeksforgeeks.org/wp-content/uploads/multiple-server-labelled-raft-visual.png)
-
-![alt text](https://miro.medium.com/max/1400/1*vl_yaJo-adBVgqhQPvA4Aw.png)
+![alt text](https://media.geeksforgeeks.org/wp-content/uploads/multiple-server-labelled-raft-visual.png) ![alt text](https://miro.medium.com/max/1400/1*vl_yaJo-adBVgqhQPvA4Aw.png)
 
 ## Leader Election
 * The election starts when the current leader fails/disconnects or at the beginning of the algorithm. A new term starts in the system with a random period for the new leader to be elected. If the election successes with a single new leader winning, the term carries on and the new leader takes over to coordinate the normal operations. Otherwise, the term expires to yield another round of the election.
